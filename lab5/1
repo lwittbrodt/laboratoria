@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(){
+
+int ile, i;
+int dodatnia=0;
+int ujemna=0;
+int zero=0;
+int liczba;
+
+printf("ile liczb chcesz podac? \n");
+scanf("%i", &ile);
+
+  for(i=0;i<ile;i++){
+    printf("podaj liczbe: ");
+    scanf("%i \n", &liczba);
+   if(liczba==0){
+	   zero++;
+   }
+   else{
+      if(liczba>0){
+	      dodatnia++;
+      } 
+      else{
+	     ujemna++;
+      } 
+   }
+   }
+
+ printf("Liczb dodatnich: %i \n", dodatnia);
+ printf("Liczba ujemnych: %i \n", ujemna);
+ printf("Zer: %i \n", zero);
+
+
+
+}
