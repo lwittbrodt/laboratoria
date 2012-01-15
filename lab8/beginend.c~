@@ -20,12 +20,10 @@ char litera_o_numerze (int n) {
 }
 main () {
   char znak;
-  int liczniki[DL_ALFABETU][2], i, j;
+  int liczniki[DL_ALFABETU][2], i;
     // inicjalizacja licznikow:
   for (i=0; i<DL_ALFABETU; i++) {
-	  for(j = 0; j < 2; j++) {
-		  liczniki[i][j] = 0;
-	  }
+	  for(int j = 0; j < 2; j++) liczniki[i][j] = 0;
   }
     // wczytywanie tekstu i zliczanie liter:
   int tmp = -1;
